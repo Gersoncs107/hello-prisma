@@ -10,11 +10,11 @@ async function main() {
         email: 'alice@prisma.io',
         posts: {
           create: {title: 'Hello World'}
+        },
+        profile: {
+          create: {bio: 'I like turtles'}
         }
-      },
-      profile: {
-        create: {bio: 'I like turtles'}
-      }
+      }     
     })
 
     const allUsers = await prisma.user.findMany()
