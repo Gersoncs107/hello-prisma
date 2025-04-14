@@ -29,6 +29,7 @@ async function main() {
       where: { id: 1 },
       data: { published: true }
     })
+    console.log(post)
   }
 
 main()
